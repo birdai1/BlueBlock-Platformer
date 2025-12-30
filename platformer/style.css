@@ -1,0 +1,2 @@
+body { display: grid; place-items: center; background: #0b1020; color: #e7e9ee; }
+canvas { width: 100%; border-radius: 14px; background: #101a35; }

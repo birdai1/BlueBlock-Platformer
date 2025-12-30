@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlueBlock Platformer</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>BlueBlock Platformer</h1>
+      <div class="hint">
+        Move: <b>A/D</b> or <b>←/→</b> • Jump: <b>W</b>/<b>↑</b>/<b>Space</b> (double) • Sprint: <b>Shift</b> • Big coin: hold <b>E</b> • New level: <b>R</b>
+      </div>
+    </header>
+
+    <canvas id="game" width="960" height="540"></canvas>
+
+    <div class="row">
+      <button id="restartBtn">New Level</button>
+      <span class="pill">Coins: <b id="coins">0</b></span>
+      <span class="pill">Deaths: <b id="deaths">0</b></span>
+      <span class="pill">Checkpoint: <b id="cp">Start</b></span>
+      <span class="pill">Sprint: <b id="stam">100</b>%</span>
+      <span class="pill">Time: <b id="time">0.00</b>s</span>
+      <span class="pill muted">finite • no overlaps • no floating spikes/CP • strategic platforms</span>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
